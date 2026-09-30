@@ -122,7 +122,10 @@ class DatasetMapper:
             health_category=health_categories,
             distributions=distributions,
             contact_points=dataset_contact_points,
-            provenance={"en": "Created and maintained by the University of Bergen."},
+            provenance={"en": (
+                f"Created and maintained by "
+                f"{publisher.name}."
+            )},
             type=dataset_type,
             conforms_to=conforms_to,
             version_notes={
